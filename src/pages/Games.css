@@ -1,0 +1,32 @@
+/* Games.css */
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-height: 2000px;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+.card-container.expanded {
+  max-height: 5000px;
+}
+
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .card-container {
+    max-height: 1800px;
+  }
+
+  .card-container.expanded {
+    max-height: 3500px;
+  }
+}

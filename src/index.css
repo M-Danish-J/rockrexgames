@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* font-family: "Eczar", serif; */
+  font-family: "Inter", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar Styles */
+/* For Webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3572EF; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px; /* creates padding around scroll thumb */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: auto; /* "auto" or "thin" */
+  scrollbar-color: #3572EF transparent; /* thumb and track color */
+}

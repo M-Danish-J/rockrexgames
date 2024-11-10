@@ -1,0 +1,27 @@
+.animateWidth {
+  animation: div 2s ease;
+  animation-fill-mode: forwards;
+}
+.headingAnimate {
+  animation: heading 1s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes div {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes heading {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
